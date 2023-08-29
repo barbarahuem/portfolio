@@ -25,38 +25,52 @@ export default function Home() {
           <div className={styles.circleThree}></div>
         </div>
 
-        <div className={styles.intro}>
-          <p className={styles.introText}>This is my digital space where I showcase my skills, 
-            experiences, and projects. Whether you stumbled upon this site 
-            accidentally or are here intentionally, I'm glad you stopped by!</p>
-          <button>
-            <a className={styles.button} href="CV_Huemer-Barbara.pdf">CV</a>
-          </button>
-        </div>
+        <section className={styles.intro}>
+          <div className={styles.introBox}>
+            <p className={styles.introText}>
+              This is my digital space where I showcase my skills, <br/>
+              experiences, and projects. Whether you stumbled upon this site <br/>
+              accidentally or are here intentionally, I'm glad you stopped by!</p>
+            <button>
+              <a href="CV_Huemer-Barbara.pdf">CV</a>
+            </button>
+          </div>
+        </section>
 
-        <div className={styles.grid}>
+        <section className={styles.codingLanguages}>
+          <h3 className={styles.codingText}>I am well versed in</h3>
+          <div className={styles.grid}>
 
-          <a className={styles.card}>
-            <img src="/img/logos/js.png"/>
-            <p>javascript</p>
-          </a>
+            <a className={styles.card}>
+              <div className={styles.cardImg}>
+                <img src="/img/logos/js.png"/>
+              </div>
+              <p>javascript</p>
+            </a>
 
-          <a className={styles.card}>
-            <img src="/img/logos/typescript.png"/>
-            <p>typescript</p>
-          </a>
+            <a className={styles.card}>
+              <div className={styles.cardImg}>
+                <img src="/img/logos/typescript.png"/>
+              </div>
+              <p>typescript</p>
+            </a>
 
-          <a className={styles.card}>
-            <img src="/img/logos/vue.png"/>
-            <p>vue</p>
-          </a>
+            <a className={styles.card}>
+              <div className={styles.cardImg}>
+                <img src="/img/logos/vue.png"/>
+              </div>
+              <p>vue</p>
+            </a>
 
-          <a className={styles.card}>
-            <img src="/img/logos/react.png"/>
-            <p>react</p>
-          </a>
+            <a className={styles.card}>
+              <div className={styles.cardImg}>
+                <img src="/img/logos/react.png"/>
+              </div>
+              <p>react</p>
+            </a>
 
-        </div>
+          </div>
+        </section>
       </main>
 
       <footer>
